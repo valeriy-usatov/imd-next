@@ -32,9 +32,9 @@ const Card = ({ result }: CardProps) => {
         <Image
           src={`https://image.tmdb.org/t/p/original/${result.poster_path || result.backdrop_path}`}
           alt="photo"
-          width={400}
+          width={300}
           height={300}
-          className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300"
+          className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300 mx-auto"
         />
         <div className='p-2'>
           <p className="line-clamp-2 text-md">{result.overview}</p>
