@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import React from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import {useSearchParams } from 'next/navigation';
 
 
 type NavbarItemProps = {
