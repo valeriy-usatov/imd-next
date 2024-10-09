@@ -1,8 +1,5 @@
 'use client';
-
 import React from 'react';
-import { FaMoon } from 'react-icons/fa6';
-import { CiLight } from 'react-icons/ci';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 

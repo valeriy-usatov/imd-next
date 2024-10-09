@@ -1,4 +1,6 @@
 import Result from '@/components/Result';
+import Error from './Error';
+import ErrorFetch from '@/components/ErrorFetch';
 const API_KEY = process.env.API_KEY;
 
 type SearchParamsProps = {
@@ -15,7 +17,8 @@ export default async function Home({ searchParams }: { searchParams: SearchParam
   );
   const data = await res.json();
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    <ErrorFetch/>
+    // throw new Error('Failed to fetch data');
   }
 
   type PageMoviesProps = {
